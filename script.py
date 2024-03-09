@@ -1,25 +1,23 @@
-# import requests
-# from pprint import pprint
-#
-# # github username
-# username = "douno"
-# # url to request
-# url = f"https://api.github.com/users/{username}"
-# # make the request and return the json
-# user_data = requests.get(url).json()
-# # pretty print JSON data
-# pprint(user_data)
-
 import json
 import pandas as pd
 import time
 import base64
+import requests
 from github import Github
 from pprint import pprint
 
 
+
+# url to request
+url = f"https://api.github.com/users/{username}"
+# make the request and return the json
+user_data = requests.get(url).json()
+# pretty print JSON data
+pprint(user_data)
+
+
 # Github username
-username = "douno"
+username = "YOUR_USERNAME"
 # pygithub object
 g = Github()
 # get that user by username
